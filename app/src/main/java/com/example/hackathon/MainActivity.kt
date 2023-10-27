@@ -7,7 +7,7 @@ import com.example.hackathon.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivityMainBinding
+    private lateinit var binding : ActivityMainBinding // 바인딩뷰 생성
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // bottomnavigationbar 페이지 전환
     private fun replaceFragment(fragment: Fragment) {
 
         val fragmentManager = supportFragmentManager
