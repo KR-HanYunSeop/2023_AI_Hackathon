@@ -2,6 +2,7 @@ package com.example.hackathon
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.hackathon.databinding.ActivityMainBinding
 
@@ -26,6 +27,10 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             true
+        }
+
+        binding.fabAdd.setOnClickListener {
+            Toast.makeText(this, "Add Alert", Toast.LENGTH_SHORT).show()
         }
     }
 
